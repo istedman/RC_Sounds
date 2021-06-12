@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DFR0299:DFR0299 U4
+L RC_Sounds-rescue:DFR0299-DFR0299 U4
 U 1 1 5F908738
 P 8900 3100
 F 0 "U4" H 8900 3967 50  0000 C CNN
@@ -74,7 +74,7 @@ F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 2950 4260
 	-1   0    0    -1  
 $EndComp
 $Comp
-L PAM8403DR:PAM8403DR U3
+L RC_Sounds-rescue:PAM8403DR-PAM8403DR U3
 U 1 1 5F918A9D
 P 4750 8950
 F 0 "U3" H 4750 9817 50  0000 C CNN
@@ -597,7 +597,7 @@ Wire Wire Line
 	5850 8550 5850 8450
 Connection ~ 5850 8450
 $Comp
-L Sparkfun_connectors:CONN_02 J1
+L RC_Sounds-rescue:CONN_02-Sparkfun_connectors J1
 U 1 1 5F97EFE6
 P 5250 10400
 F 0 "J1" H 5208 10704 45  0000 C CNN
@@ -932,7 +932,7 @@ Non-amplified output for external Amp
 Connection ~ 7800 9150
 Connection ~ 7350 9300
 $Comp
-L Sparkfun_connectors:AVR_SPI_PROG_3X2PTH J2
+L RC_Sounds-rescue:AVR_SPI_PROG_3X2PTH-Sparkfun_connectors J2
 U 1 1 5FBC0777
 P 6300 2300
 F 0 "J2" H 6300 2604 45  0000 C CNN
@@ -972,7 +972,7 @@ Connection ~ 4500 1450
 Text Notes 4850 1150 0    50   ~ 0
 PB5 Analogue in/switch\nPB2 LED\nPB1 (horn)\nPB0 (Aux in for horn)
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20SU U2
+L RC_Sounds-rescue:ATtiny85-20SU-MCU_Microchip_ATtiny U2
 U 1 1 5FA14CF5
 P 4500 3350
 F 0 "U2" H 3971 3396 50  0000 R CNN
@@ -1051,7 +1051,7 @@ Connection ~ 6100 6500
 Wire Wire Line
 	6100 6500 6150 6500
 $Comp
-L SparkFun-Switches:MOMENTARY-SWITCH-SPST-SMD-5.2MM S1
+L RC_Sounds-rescue:MOMENTARY-SWITCH-SPST-SMD-5.2MM-SparkFun-Switches S1
 U 1 1 5FE2E806
 P 4950 5700
 F 0 "S1" V 4992 5656 45  0000 R CNN
@@ -1089,7 +1089,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 5900 4950 6100
 $Comp
-L SparkFun-Connectors:CONN_03 J3
+L RC_Sounds-rescue:CONN_03-SparkFun-Connectors J3
 U 1 1 5FE6A2C7
 P 7150 4000
 F 0 "J3" H 7108 4404 45  0000 C CNN
@@ -1140,7 +1140,7 @@ Connection ~ 7850 1450
 Wire Wire Line
 	7850 1450 9650 1450
 $Comp
-L SparkFun-Connectors:CONN_04 J6
+L RC_Sounds-rescue:CONN_04-SparkFun-Connectors J6
 U 1 1 6001321B
 P 12500 2900
 F 0 "J6" H 12272 2955 45  0000 R CNN
@@ -1173,7 +1173,7 @@ Wire Wire Line
 	12250 3000 12250 3100
 Connection ~ 12250 3100
 $Comp
-L SparkFun-Connectors:CONN_04 J5
+L RC_Sounds-rescue:CONN_04-SparkFun-Connectors J5
 U 1 1 60056A94
 P 10550 8900
 F 0 "J5" H 10322 9008 45  0000 R CNN
@@ -1205,7 +1205,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 9300 10350 9300
 $Comp
-L SparkFun-Connectors:CONN_02 J4
+L RC_Sounds-rescue:CONN_02-SparkFun-Connectors J4
 U 1 1 600ACA5E
 P 1400 1550
 F 0 "J4" H 1358 1854 45  0000 C CNN
@@ -1233,7 +1233,7 @@ Horn/hooter input
 Text Notes 1650 4450 0    50   ~ 0
 Optional speed/aux input
 $Comp
-L SparkFun-LED:LED-GREEN0603 D1
+L RC_Sounds-rescue:LED-GREEN0603-SparkFun-LED D1
 U 1 1 60137D2D
 P 7550 2050
 F 0 "D1" V 7261 2000 45  0000 C CNN
@@ -1249,7 +1249,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 2050 7350 2050
 $Comp
-L PTV112:PTV112 R17
+L RC_Sounds-rescue:PTV112-PTV112 R17
 U 1 1 60199D6D
 P 10350 3550
 F 0 "R17" H 10280 3596 50  0000 R CNN
@@ -1260,7 +1260,7 @@ F 3 "" H 10350 3550 50  0001 L BNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PTV112:PTV112 R17
+L RC_Sounds-rescue:PTV112-PTV112 R17
 U 2 1 6019E190
 P 10650 2800
 F 0 "R17" H 10580 2846 50  0000 R CNN
@@ -1298,7 +1298,7 @@ Wire Wire Line
 Wire Wire Line
 	10650 2450 10650 2500
 $Comp
-L SparkFun-Hardware:STAND-OFFTIGHT H1
+L RC_Sounds-rescue:STAND-OFFTIGHT-SparkFun-Hardware H1
 U 1 1 602F0EFC
 P 15000 9000
 F 0 "H1" H 15000 9100 45  0001 C CNN
@@ -1310,7 +1310,7 @@ F 4 "XXX-00000" H 15078 9000 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Hardware:STAND-OFFTIGHT H2
+L RC_Sounds-rescue:STAND-OFFTIGHT-SparkFun-Hardware H2
 U 1 1 602F1C12
 P 15000 9150
 F 0 "H2" H 15000 9250 45  0001 C CNN
@@ -1322,7 +1322,7 @@ F 4 "XXX-00000" H 15078 9150 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Hardware:STAND-OFFTIGHT H3
+L RC_Sounds-rescue:STAND-OFFTIGHT-SparkFun-Hardware H3
 U 1 1 602F1E75
 P 15000 9300
 F 0 "H3" H 15000 9400 45  0001 C CNN
@@ -1334,7 +1334,7 @@ F 4 "XXX-00000" H 15078 9300 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Hardware:STAND-OFFTIGHT H4
+L RC_Sounds-rescue:STAND-OFFTIGHT-SparkFun-Hardware H4
 U 1 1 602F1FF8
 P 15000 9450
 F 0 "H4" H 15000 9550 45  0001 C CNN
@@ -1394,7 +1394,7 @@ F 3 "~" H 15250 8350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sparkfun_connectors:CONN_02 J7
+L RC_Sounds-rescue:CONN_02-Sparkfun_connectors J7
 U 1 1 5FC3DC7E
 P 3900 1900
 F 0 "J7" H 3858 2204 45  0000 C CNN
@@ -1452,7 +1452,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 3550 7500 3550
 Wire Wire Line
-	5100 3550 5950 3550
+	5100 3550 5400 3550
 Wire Wire Line
 	5100 3150 5150 3150
 Wire Wire Line
@@ -1530,15 +1530,15 @@ Wire Wire Line
 Wire Wire Line
 	4950 4500 4950 5000
 Wire Wire Line
-	5400 2200 5400 4500
+	5400 2200 5400 3550
 Connection ~ 5400 4500
 Wire Wire Line
 	5400 4500 5400 4800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 60A2B37A
 P 7600 4100
-F 0 "#PWR?" H 7600 3850 50  0001 C CNN
+F 0 "#PWR0102" H 7600 3850 50  0001 C CNN
 F 1 "GND" H 7605 3927 50  0000 C CNN
 F 2 "" H 7600 4100 50  0001 C CNN
 F 3 "" H 7600 4100 50  0001 C CNN
@@ -1554,4 +1554,11 @@ Wire Wire Line
 Connection ~ 7500 3550
 Wire Wire Line
 	7500 3550 7700 3550
+Connection ~ 5400 3550
+Wire Wire Line
+	5400 3550 5950 3550
+Wire Wire Line
+	5400 3550 5400 4500
+Text Notes 5400 3650 0    50   ~ 0
+Missing on V1.1 PCB\n
 $EndSCHEMATC
