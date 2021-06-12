@@ -4,14 +4,15 @@ A simple, low cost sound effect module for R/C vehicles, land or water based. It
 A PAM8403 Class D amplifier, with EMC fixes is also provided, this allows the system to drive 2x 8 ohm speakers at 2W. Volume control is provided on-board as well as an option to mute the amplifier and finally use an external amplifier, if desired using the pre-amp outputs.
 
 PCB designed to fit into a Hammond 1594B enclosure.
+![Alt text](https://github.com/istedman/RC_Sounds/blob/main/Photos/RC_Sounds_boxed_2_web.JPG?raw=true "Boxed unit")
 
 Total cost of all parts, PCB, enclosure and speakers is approximately £30.
 
 Current state as of 11th April 2021.
 Design is working well. Had to wire link the first PCBs as the switch inputs were not connected to an analogue input. The Schematic and PCB shown here are the corrected files.
 
-The first software release is attached to the repository. The software is written in the Arduino IDE, it uses the ATtinyCore library and the Optiboot bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
+Use the updated V1.1 software, this adds 4 speeds to the engine sounds and utilises the auxilary input to act as the throttle. The software is written in the Arduino IDE, it uses the ATtinyCore library and no bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
 
 Power is from a 3.7-12V supply or the receiver BEC circuit. Unit has a polyfuse to protect against reverse polarity and a linear regulator.
 ![Alt text](https://github.com/istedman/RC_Sounds/blob/main/RC_Sounds_schematic.png?raw=true "Schematic")
-![Alt text](https://github.com/istedman/RC_Sounds/blob/main/RC_Sounds_3d_PCB.png?raw=true "PCB")
+![Alt text](https://github.com/istedman/RC_Sounds/blob/main/Photos/RC_Sounds_pic2_web.JPG?raw=true "Just the PCB")
