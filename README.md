@@ -8,10 +8,12 @@ PCB designed to fit into a Hammond 1594B enclosure.
 
 Total cost of all parts, PCB, enclosure and speakers is approximately £30. See the BOM directory for an HTML export with full ordering part numbers.
 
-## Current state as of 12th June 2021.
-Design is working well. Had to wire link the first PCBs as the switch inputs were not connected to an analogue input. The Schematic and PCB shown here are the corrected files.
+## Current state as of 5th June 2022.
+Design is working well. Has based compatibility tests with multiple AM/2.4 GHz receivers, 2-6 channels and has been field tested.
 
-Use the updated V1.1 software, this adds 4 speeds to the engine sounds and utilises the auxilary input to act as the throttle. The software is written in the Arduino IDE, it uses the ATtinyCore library and no bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
+Use the updated V1.2_test software, this adds 4 speeds to the engine sounds and utilises the auxilary input to act as the throttle. The software is written in the Arduino IDE, it uses the ATtinyCore library and no bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
+
+ATTiny85 fuse settings are in the header of the main source code, use USBASP/Avrdudess to set them.
 
 ## Boat sound effects SD card image now available
 
@@ -23,6 +25,8 @@ Power is from a 3.7-12V supply or the receiver BEC circuit. Unit has a polyfuse 
 Do not use with a 1S LiPO ESC or any other ESC that boosts the BEC output. The current design assumes the stndard +5V BEC output voltage. My 1S LiPO ESCs output
 6 or 7.2V to boost the servo power, using such an ESC (Trackstar Gen II 120A or Hobbywing Xerun) would irreprably damage the design as it will operate with 5.5V maximum.
 
+You will need an UltraBEC/SuperBEC ESC, i.e. one that can output 2A @ 5V for reliable operation. This unit can demand a peak 0.6A @ 5V, when tested with a 1A BEC, and 3-4 servos, I had a few brownouts. If it reandomly resets at the same time as your receiver, use the external power option and remove the BEC jumper!
+
 ## Schematic and circuit description
 
 ![Alt text](https://github.com/istedman/RC_Sounds/blob/main/RC_Sounds_schematic.png?raw=true "Schematic")
@@ -33,7 +37,7 @@ The ATTiny 85 microcontroller provides the control function. It reads the PWM in
 
 Communications to/from the DFR0299 MP3 module are via pins 2 & 3 and use a standard 9600 8N1 serial interface. A USB to TTL adaptor can be connected to the TX output of the ATTiny 85 on pin 2 for debug messages, using J3.
 
-A solitary LED, D1 is used to indicate errors, setup functions and when the horn has been activated.
+A solitary LED, D1 is used to setup functions and when the horn has been activated.
 
 A set of DIP switches, SW1, set various analogue voltages that determine the sound sample to be played. Limits are defined in the software. A setup switch, S1 is used in the setup routine to set the horn on/off position and the throttle positions.
 
