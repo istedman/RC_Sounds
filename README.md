@@ -8,10 +8,10 @@ PCB designed to fit into a Hammond 1594B enclosure.
 
 Total cost of all parts, PCB, enclosure and speakers is approximately £30. See the BOM directory for an HTML export with full ordering part numbers.
 
-## Current state as of 5th June 2022.
+## Current state as of 25th June 2025.
 Design is working well. Has based compatibility tests with multiple AM/2.4 GHz receivers, 2-6 channels and has been field tested.
 
-Use the updated V1.2_test software, this adds 4 speeds to the engine sounds and utilises the auxilary input to act as the throttle. The software is written in the Arduino IDE, it uses the ATtinyCore library and no bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
+Use the updated V1.2_1_int software, this adds 4 speeds to the engine sounds and utilises the auxilary input to act as the throttle. The software is written in the Arduino IDE, it uses the ATtinyCore library and no bootloader. The board must be programmed using a progammer, I use a USBASP. To allow the PWM settings function to work, you have to disable the reset function on the fuses. A high voltage programmer is required to unlock. I use this design, https://github.com/wokwi/attiny-hvsp-programmer and clip onto the ATTiny85. All fuse setting defined in the software.
 
 ATTiny85 fuse settings are in the header of the main source code, use USBASP/Avrdudess to set them.
 
